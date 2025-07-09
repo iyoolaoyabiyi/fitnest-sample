@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FitNests Gymnasium</title>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-primary">
+  <main>
+    <header class="flex justify-between items-center ps-16 bg-black text-white not-mobile:flex-col not-mobile:gap-6 not-mobile:items-stretch not-mobile:p-0 not-mobile:justify-end">
+      <div class="flex items-center justify-between not-mobile:px-8 not-mobile:py-5">
+        <h1 class="font-logo font-bold text-2xl uppercase">Fit<span class="text-theme-red">Nests</span></h1>
+        <button id="navBtn" class="mobile:hidden cursor-pointer hover:text-theme-red text-2xl"><i class="fa fa-bars"></i></button>
+      </div>
+      <nav id="nav" class="flex not-mobile:flex-col not-mobile:hidden">
+        <a href="#" class="nav-btn">Home</a>
+        <a href="#" class="nav-btn">About Us</a>
+        <button class="nav-btn cursor-pointer">
+          <span>Programs <i class="fa fa-chevron-down"></i></span>
+        </button>
+        <a href="#" class="nav-btn">Contact Us</a>
+      </nav>
+    </header>
+    <section class=" bg-[url(/images/hero.png)] bg-center bg-cover bg-fixed">
+      <div class="min-h-[94vh] flex flex-col justify-center items-start bg-[#000c] text-white p-16 not-mobile:p-8 not-mobile:pt-16">
+        <h2 class="font-heading text-7xl font-bold uppercase mb-10 not-mobile:text-4xl not-mobile:mb-5">Let's raise the bar & <span class="text-theme-red">Dumbells</span></h2>
+          <div class="mb-20 text-2xl not-mobile:text-xl not-mobile:mb-10">
+            <p>We're part fitness studio, part safe haven.</p>
+            <p>Come as you are, even if your gym bag is just emotional baggage.</p>
+          </div>
+          <button id="onboardBtn" class="cursor-pointer bg-theme-red px-10 py-2 rounded-md font-bold hover:bg-white hover:text-theme-red active:bg-white active:text-theme-red text-2xl duration-300">Join the Flock</button>
+          <nav class="w-[100%] mt-30 sm:flex-row sm:justify-between sm:gap-0 flex flex-col items-start gap-6">
+            <button class="serv-btn">Pilates</button>
+            <button class="serv-btn">Crossfit</button>
+            <button class="serv-btn">Bodybuilding</button>
+            <button class="serv-btn">Enduring Training</button>
+            <button class="serv-btn">Boxing</button>
+          </nav>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
