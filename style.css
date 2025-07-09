@@ -227,8 +227,8 @@
   .bg-theme-red {
     background-color: var(--color-theme-red);
   }
-  .bg-\[url\(\/images\/hero\.png\)\] {
-    background-image: url(/images/hero.png);
+  .bg-\[url\(\.\/images\/hero\.png\)\] {
+    background-image: url(./images/hero.png);
   }
   .bg-cover {
     background-size: cover;
@@ -403,7 +403,6 @@
   }
 }
 :root {
-  cursor: url('gloves-icon.png'), auto;
   cursor: url('./images/gloves-icon.png'), auto;
 }
 .nav-btn {
