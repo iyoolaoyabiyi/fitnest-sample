@@ -9,12 +9,33 @@ navBtn.addEventListener('click', () => {
   else  nav.style.display = 'none';
 });
 
-onBoardBtn.addEventListener('mouseenter', function() {
-  this.textContent = 'Flying in ...'
-})
-onBoardBtn.addEventListener('mouseleave', function() {
-  this.textContent = 'Join the Flock'
-})
-onBoardBtn.addEventListener('mousedown', function() {
-  this.textContent = 'Securing Nest...'
-})
+onBoardBtn.addEventListener('mouseenter', secureText)
+onBoardBtn.addEventListener('mouseleave', initText)
+onBoardBtn.addEventListener('click', secureNest)
+
+function secureNest() {
+  onBoardBtn.removeEventListener('mouseenter', secureText)
+  onBoardBtn.removeEventListener('mouseleave', initText)
+  onBoardBtn.removeEventListener('click', secureNest)
+  flyText()
+  setTimeout(() => {
+    onBoardBtn.addEventListener('mouseenter', secureText)
+    onBoardBtn.addEventListener('mouseleave', initText)
+    onBoardBtn.addEventListener('click', secureNest)
+    changeBtnText('Nest secured');
+  }, 3000);
+}
+
+function flyText() {
+  changeBtnText('Flying in ...')
+}
+function initText() {
+  changeBtnText('Join the Flock')
+}
+function secureText() {
+  changeBtnText('Secure a nest')
+}
+
+function changeBtnText(text) {
+  onBoardBtn.textContent = text;
+}
