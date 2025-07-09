@@ -19,9 +19,9 @@ function secureNest() {
   onBoardBtn.removeEventListener('click', secureNest)
   flyText()
   setTimeout(() => {
-    onBoardBtn.addEventListener('mouseenter', secureText)
-    onBoardBtn.addEventListener('mouseleave', initText)
-    onBoardBtn.addEventListener('click', secureNest)
+    // onBoardBtn.addEventListener('mouseenter', secureText)
+    // onBoardBtn.addEventListener('mouseleave', initText)
+    // onBoardBtn.addEventListener('click', secureNest)
     changeBtnText('Nest secured');
   }, 3000);
 }
