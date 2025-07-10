@@ -1,0 +1,1 @@
+Based on design and copy by [Dolapo Oye](https://medium.com/@DforDolapo) from her [Blog post](https://medium.com/@DforDolapo/ux-writing-practice-project-landing-page-for-fitnests-e9d2905f109a).
